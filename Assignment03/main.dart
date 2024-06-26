@@ -224,16 +224,16 @@ List<String> originalList = ['apple', 'banana', 'orange', 'banana', 'apple', 'gr
 }
 
 void removeDuplicates(List<String> list) {
-  Set<String> seen = Set<String>(); // Set to track seen elements
+  Set<String> seen = Set<String>(); 
 
   for (String element in list) {
     if (!seen.contains(element)) {
-      seen.add(element); // Add element to set if it's not already present
-      print(element); // Print element if it's unique
+      seen.add(element);
+      print(element); 
     }
   }
 
-  // Alternatively, you can modify the original list to contain only unique elements
+
   list.clear();
   list.addAll(seen);
 
@@ -245,25 +245,25 @@ void removeDuplicates(List<String> list) {
 
  
  List<int> originalList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  int n = 5; // Number of elements to take
+  int n = 5; 
   
-  // Print the original list
+  
   print('Original List: $originalList');
   
-  // Print the first n elements from the original list
+  
   printFirstNElements(originalList, n);
 }
 
 void printFirstNElements(List<int> list, int n) {
-  // Ensure n is within bounds of the list length
+ 
   if (n > list.length) {
     n = list.length;
   }
   
-  // Create a new list containing the first n elements
+  
   List<int> newList = list.sublist(0, n);
   
-  // Print the new list
+ 
   print('First $n Elements List: $newList');
 
 
@@ -275,15 +275,15 @@ void printFirstNElements(List<int> list, int n) {
 
  List<String> originalList = ['apple', 'banana', 'orange', 'grape'];
 
-  // Print the original list
+
   print('Original List: $originalList');
 
-  // Print the reversed list directly without storing it in a variable
+  
   printReversedList(originalList);
 }
 
 void printReversedList(List<String> list) {
-  // Print the elements of the list in reverse order
+  
   List<String> reversedList = List.from(list.reversed);
   print('Reversed List: $reversedList');
 
@@ -296,20 +296,20 @@ void printReversedList(List<String> list) {
 
  List<int> originalList = [3, 5, 2, 5, 1, 3, 4, 2];
 
-  // Print the original list
+  
   print('Original List: $originalList');
 
-  // Print the unique elements directly without storing them in a variable
+  
   printUniqueElements(originalList);
 }
 
 void printUniqueElements(List<int> list) {
-  Set<int> seen = Set<int>(); // Set to track seen elements
+  Set<int> seen = Set<int>();
 
   for (int element in list) {
     if (!seen.contains(element)) {
-      seen.add(element); // Add element to set if it's not already present
-      print(element); // Print the unique element
+      seen.add(element); 
+      print(element); 
     }
   }
 
