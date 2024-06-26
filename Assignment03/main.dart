@@ -34,17 +34,17 @@ void main() {
   //Question No 03
   print("------Question No 03------");
 
-// Create a list of days
+
   List<String> days1 = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-  // Print the original list
+  
   print('Original list: $days1');
 
-  // Remove each day one by one from the end of the list
+  
   while (days1.isNotEmpty) {
-    // Remove the last day
+    
     String removedDay = days1.removeLast();
-    // Print the removed day and the updated list
+    
     print('Removed day: $removedDay');
     print('Remaining list: $days1');
   }
@@ -57,14 +57,14 @@ void main() {
   //Question No 04
   print("------Question No 04------");
 
- // Create a list of numbers
+ 
   List<int> numbers = [34, 7, 23, 32, 5, 62];
-  // Print the original list
+  
   print('Original list: $numbers');
-  // Find the smallest and greatest numbers
+  
   int smallest = numbers.reduce((curr, next) => curr < next ? curr : next);
   int greatest = numbers.reduce((curr, next) => curr > next ? curr : next);
-  // Print the smallest and greatest numbers
+  
   print('Smallest number: $smallest');
   print('Greatest number: $greatest');
 
@@ -75,18 +75,18 @@ void main() {
   // Question No 05
   print("------Question No 05------");
 
- // Create a map with name and phone keys
+ 
   Map<String, String> contacts = {
     'Murtaz': '123-4567',
     'Ali': '987-6543',
     'Imran': '555-1234',
     'Bilal': '111-2222'
   };
-  // Print the original map
+  
   print('Original map: $contacts');
-  // Use where to find all keys that have length 4
+  
   Iterable<String> keysWithLength4 = contacts.keys.where((key) => key.length == 4);
-  // Print the keys with length 4
+ 
   print('Keys with length 4: $keysWithLength4');
 
 
@@ -97,7 +97,7 @@ void main() {
   print("------Question No 06------");
 
 
-  // Create a map named world
+  
   Map<String, Map<String, String>> world = {
     'USA': {
       'capitalCity': 'Washington, D.C.',
@@ -116,10 +116,10 @@ void main() {
     }
   };
 
-  // Print the original world map
+ 
   print('World map: $world');
 
-  // Specify a country key to print the values of capitalCity and currency
+ 
   String countryKey = 'Japan';
   if (world.containsKey(countryKey)) {
     Map<String, String> countryInfo = world[countryKey]!;
@@ -138,23 +138,23 @@ void main() {
   print("------Question No 07------");
 
 
-// Initial expenses map
+
   Map<String, double> expenses = {
     'sun': 3000.0,
     'mon': 3000.0,
     'tue': 3234.0,
   };
 
-  // Check if 'fri' exists in expenses
+ 
   if (expenses.containsKey('fri')) {
-    // If 'fri' exists, change its value to 5000.0
+    
     expenses['fri'] = 5000.0;
   } else {
-    // If 'fri' doesn't exist, add it to expenses with value 5000.0
+  
     expenses['fri'] = 5000.0;
   }
 
-  // Print updated expenses map
+  
   print('Updated expenses: $expenses');
 
 
@@ -164,7 +164,7 @@ void main() {
   // Question No 08
   print("------Question No 08-----");
 
-  // List of maps representing users and their eligibility
+  
   List<Map<String, dynamic>> usersEligibility = [
     {'name': 'John', 'eligible': true},
     {'name': 'Alice', 'eligible': false},
@@ -173,22 +173,22 @@ void main() {
     {'name': 'Tom', 'eligible': false},
   ];
 
-  // Print the original list
+  
   print('Original list:');
   usersEligibility.forEach((user) => print(user));
-  // Remove entries where 'eligible' is false
+  
   usersEligibility.removeWhere((user) => user['eligible'] == false);
-  // Print the updated list
+  
   print('\nList after removing false entries:');
   usersEligibility.forEach((user) => print(user));
 
 
-  // Print the original list
+ 
   print('Original list:');
   usersEligibility.forEach((user) => print(user));
-  // Retain entries where 'eligible' is true
+  
   usersEligibility.retainWhere((user) => user['eligible'] == true);
-  // Print the updated list
+ 
   print('\nList after retaining true entries:');
   usersEligibility.forEach((user) => print(user));
 
@@ -201,7 +201,7 @@ void main() {
 
 
  List<int> numbers1 = [15, 6, 23, 8, 45, 10];
-  // Using reduce to find the maximum value
+ 
   int maxValue = numbers1.reduce((currentMax, next) => currentMax > next ? currentMax : next);
   print('The maximum value in the list is: $maxValue');
 
@@ -215,10 +215,10 @@ void main() {
 
 List<String> originalList = ['apple', 'banana', 'orange', 'banana', 'apple', 'grape'];
 
-  // Print the original list
+  
   print('Original List: $originalList');
 
-  // Remove duplicates and print the new list
+  
   print('List without Duplicates:');
   removeDuplicates(originalList);
 }
