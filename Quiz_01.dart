@@ -71,14 +71,10 @@ print("****Qno5****");
 
   if (sellingPrice > costPrice) {
     double profit = sellingPrice - costPrice;
-    double profitPercentage = (profit / costPrice) * 100;
-    print('Profit: \$${profit.toStringAsFixed(2)}');
-    print('Profit Percentage: ${profitPercentage.toStringAsFixed(2)}%');
+    print('you can booked your profit amount: \$${profit.toStringAsFixed(2)}');
   } else if (sellingPrice < costPrice) {
     double loss = costPrice - sellingPrice;
-    double lossPercentage = (loss / costPrice) * 100;
-    print('Loss: \$${loss.toStringAsFixed(2)}');
-    print('Loss Percentage: ${lossPercentage.toStringAsFixed(2)}%');
+    print('Your Loss is: \$${loss.toStringAsFixed(2)}');
   } else {
     print('No Profit, No Loss');
   }
